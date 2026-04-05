@@ -6,4 +6,7 @@ rich>=13.0.0
 websockets>=12.0
 tweepy>=4.14.0
 aiohttp>=3.9.0
-# py-clob-client>=0.18.0  # Requires Python >=3.9.10 — install separately for live trading
+# FIX: py-clob-client is now pinned with a minimum version so all users get a
+# consistent API surface for executor.py (OrderArgs, OrderType.GTC, etc.).
+# Required for live trading. Install with: pip install py-clob-client>=0.18.0
+py-clob-client>=0.18.0
